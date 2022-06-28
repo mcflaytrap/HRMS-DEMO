@@ -1,18 +1,18 @@
-package kodlamaio.demo.entities.concretes;
+package kodlamaio.demo.entities.abstracts;
 
 import lombok.Data;
 
 import javax.persistence.*;
 
 @Data
-@Table(name="User")
+@Table(name="Users")
 @Entity
 
-public class User {
+public abstract  class User {
 
     @Id
     @Column(name="id")
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     @Column(name="email")

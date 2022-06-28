@@ -2,7 +2,7 @@ package kodlamaio.demo.business.concretes;
 
 import kodlamaio.demo.business.abstracts.UserService;
 import kodlamaio.demo.dataAccess.abstracts.UserDao;
-import kodlamaio.demo.entities.concretes.User;
+import kodlamaio.demo.entities.abstracts.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

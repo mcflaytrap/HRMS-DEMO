@@ -1,9 +1,8 @@
 package kodlamaio.demo.api;
 
 import kodlamaio.demo.business.abstracts.UserService;
-import kodlamaio.demo.entities.concretes.User;
+import kodlamaio.demo.entities.abstracts.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

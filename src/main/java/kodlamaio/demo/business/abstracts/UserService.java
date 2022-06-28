@@ -1,6 +1,6 @@
 package kodlamaio.demo.business.abstracts;
 
-import kodlamaio.demo.entities.concretes.User;
+import kodlamaio.demo.entities.abstracts.User;
 
 import java.util.List;
 

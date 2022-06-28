@@ -2,7 +2,7 @@ package kodlamaio.demo.business.concretes;
 
 import kodlamaio.demo.business.abstracts.JobPositionsService;
 import kodlamaio.demo.dataAccess.abstracts.JobPositionsDao;
-import kodlamaio.demo.entities.concretes.JobPositions;
+import kodlamaio.demo.entities.concretes.JobPosition;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -15,7 +15,7 @@ public class JobPositionsManager implements JobPositionsService {
     }
 
     @Override
-    public List<JobPositions> getAll() {
+    public List<JobPosition> getAll() {
         return null;
     }
 }

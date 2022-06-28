@@ -1,19 +1,16 @@
 package kodlamaio.demo.entities.concretes;
 
+import kodlamaio.demo.entities.abstracts.User;
 import lombok.Data;
 
 import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="JobSeeker")
+@Table(name="JobSeekers")
 
 public class JobSeeker extends User {
 
-    @Id
-    @GeneratedValue
-    @Column(name="id")
-    private int id ;
 
     @Column(name="first_name")
     private String firstName;
