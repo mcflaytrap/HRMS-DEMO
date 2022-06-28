@@ -3,6 +3,7 @@ package kodlamaio.demo.api;
 import kodlamaio.demo.business.abstracts.JobPositionsService;
 import kodlamaio.demo.entities.concretes.JobPositions;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +17,7 @@ public class JobPositionController {
     public JobPositionController(JobPositionsService jobPositionsService) {
         this.jobPositionsService = jobPositionsService;
     }
-
+    @GetMapping("/getall")
     public List<JobPositions> getAll(){
         return jobPositionsService.getAll();
     }
